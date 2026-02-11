@@ -5,8 +5,6 @@ echo "--- Build started ---"
 
 rm -rf Game
 
-SDK=$(xcrun --show-sdk-path)
-
 find Sources/Runtime \( -name "*.hylo" \) -print0 | xargs -0 hc \
   -L ./Libraries \
   -l SDL3 \
