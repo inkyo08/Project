@@ -1,0 +1,23 @@
+@ffi("SDL_Init")
+fun sdl_init(_ flags: Int) -> Int
+
+@ffi("SDL_Quit")
+fun sdl_quit()
+
+@ffi("SDL_CreateWindow")
+fun sdl_create_window(_ title: MemoryAddress, _ w: Int, _ h: Int, _ flags: UInt64) -> MemoryAddress
+
+@ffi("SDL_Delay")
+fun sdl_delay(_ ms: UInt32)
+
+public fun main() {
+  if sdl_init(32) == 0 {
+    abort()
+  }
+
+  let window = sdl_create_window("asdf".utf8.nullterminated.raw, 320, 240, 32)
+
+  sdl_delay(5000)
+
+  sdl_quit()
+}
