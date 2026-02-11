@@ -16,6 +16,8 @@ Windows:
 - Libraries/에 SDL3.lib 배치
 - 프로젝트 루트에 SDL3.dll 배치
 
+리눅스에선 Build.sh 수정 필요
+
 
 [English]
 
@@ -34,3 +36,5 @@ macOS/Linux:
 Windows:
 - Place SDL3.lib in Libraries/
 - Place SDL3.dll in project root
+
+Build.sh requires modification on Linux
