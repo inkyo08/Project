@@ -1,0 +1,36 @@
+[Korean]
+
+SDL3로 변경
+- 기존 자체 라이브러리는 Hylo에서 구조체 반환 문제로 방대한 API 수정 필요
+- SDL3 GPU/셰이더 추상화 사용 결정
+
+빌드 전 준비사항
+- SDL 3.4.0 다운로드: https://github.com/libsdl-org/SDL/releases
+  (Windows는 SDL3-devel-3.4.0-VC.zip 필요)
+
+macOS/Linux:
+- Libraries/에 SDL3.dylib 배치
+- Build.sh 실행
+
+Windows:
+- Libraries/에 SDL3.lib 배치
+- 프로젝트 루트에 SDL3.dll 배치
+
+
+[English]
+
+Switched to SDL3
+- Existing custom library requires extensive API changes due to struct return issues in Hylo
+- Decided to use SDL3 GPU/shader abstraction
+
+Pre-build Setup
+- Download SDL 3.4.0: https://github.com/libsdl-org/SDL/releases
+  (Windows requires SDL3-devel-3.4.0-VC.zip)
+
+macOS/Linux:
+- Place SDL3.dylib in Libraries/
+- Run Build.sh
+
+Windows:
+- Place SDL3.lib in Libraries/
+- Place SDL3.dll in project root
