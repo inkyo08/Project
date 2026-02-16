@@ -1,2 +1,8 @@
-Build
-*.DS_Store
+Build/
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+Thumbs.db
+Desktop.ini
